@@ -1,0 +1,76 @@
+    body {
+        background-color: rgb(255, 166, 0);
+    }
+    
+    #logo-img {
+        background: url("/Images/Logo/logo150.jpg") no-repeat;
+        width: 150px;
+        height: 130px;
+        margin: -5px 10px 0px 20px;
+        margin-bottom: -30px;
+    }
+    
+    .navbar {
+        background-color: rgb(36, 34, 34);
+        margin: 0px 50px 0px 50px;
+    }
+    
+    .navbar-brand h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-size: 85px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #222;
+        position: relative;
+        /* margin-left: -45px; */
+        line-height: .75;
+    }
+    
+    #hookah {
+        font-family: 'Josefin Slab', serif;
+        padding-top: -10px;
+        padding-bottom: -10px;
+        margin-bottom: -10px;
+        letter-spacing: 10px;
+        color: white;
+        margin-top: -20px;
+        position: absolute;
+    }
+    
+    .navbar-brand a:hover,
+    .navbar-brand a:focus {
+        text-decoration: none;
+    }
+    
+    #time {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-right: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .navbar-social {
+        position: absolute;
+        margin: 5px 40px 0 -70px;
+    }
+    
+    #insta {}
+    
+    #telegram {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    @media (min-width: 1200px) {
+        .navbar-brand h1 {}
+    }
+    
+    @media (min-width:992px) and (max-width:1199px) {}
+    
+    @media(min-width:768px) and (max-width:991px) {}
+    
+    @media(max-width:767px) {}
+    /*editional*/
+    
+    @media( max-width: 479px) {}
