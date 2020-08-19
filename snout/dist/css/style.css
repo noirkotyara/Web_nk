@@ -4,7 +4,7 @@
     /* HEADER BEGIN */
     
     #logo-img {
-        background: url("Images/Logo/logo150.jpg") no-repeat;
+        background: url(../images/logo/logo150.jpg) no-repeat;
         width: 150px;
         height: 130px;
         margin: -5px 10px 0px 20px;
@@ -100,7 +100,7 @@
             letter-spacing: 10px;
         }
         #logo-img {
-            background: url("/Images/Logo/logo125.jpg") no-repeat;
+            background: url(../images/logo/logo125.jpg) no-repeat;
             margin-top: 10px;
         }
         #time {
@@ -133,7 +133,7 @@
             margin-right: 30px;
         }
         #logo-img {
-            background: url("/Images/Logo/logo100.jpg") no-repeat;
+            background: url(../images/logo/logo100.jpg) no-repeat;
             margin-bottom: -50px;
         }
         #time {
@@ -160,6 +160,9 @@
     
     @media( max-width: 610px) {
         /* HEader */
+        .navbar-brand {
+            margin-left: -50px;
+        }
         .navbar-brand h1 {
             font-size: 40px;
         }
@@ -168,7 +171,6 @@
             letter-spacing: 5px;
         }
         #logo-img {
-            margin-bottom: 0px;
             background: none;
         }
         #time {
