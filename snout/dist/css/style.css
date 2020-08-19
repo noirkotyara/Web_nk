@@ -4,7 +4,7 @@
     /* HEADER BEGIN */
     
     #logo-img {
-        background: url("/Images/Logo/logo150.jpg") no-repeat;
+        background: url("Images/Logo/logo150.jpg") no-repeat;
         width: 150px;
         height: 130px;
         margin: -5px 10px 0px 20px;
@@ -162,6 +162,38 @@
         /* HEader */
         .navbar-brand h1 {
             font-size: 40px;
+        }
+        #hookah {
+            font-size: 0.6em;
+            letter-spacing: 5px;
+        }
+        #logo-img {
+            margin-bottom: 0px;
+            background: none;
+        }
+        #time {
+            font-size: 17px;
+        }
+        #telegram {
+            width: 25px;
+            height: 25px;
+        }
+        #insta {
+            width: 40px;
+            height: 40px;
+        }
+        .navbar-social {
+            margin: -5px 40px 0px -45px;
+        }
+        .navbar-social #insta {
+            margin-left: 3px;
+        }
+        /*End HEader */
+    }
+    /*Для телефону*/
+    /*
+      .navbar-brand h1 {
+            font-size: 40px;
             margin-left: 9px;
             margin-top: -85px;
             position: absolute;
@@ -199,6 +231,4 @@
         }
         .navbar-social #insta {
             margin-left: 3px;
-        }
-        /*End HEader */
-    }
+        }*/
