@@ -121,7 +121,7 @@
         /* End HEader */
     }
     
-    @media ( min-width: 611px) and (max-width:767px) {
+    @media ( min-width: 595px) and (max-width:767px) {
         /* HEader */
         .navbar-brand h1 {
             font-size: 50px;
@@ -158,10 +158,11 @@
     }
     /*editional*/
     
-    @media( max-width: 610px) {
+    @media (min-width: 415px) and ( max-width: 594px) {
         /* HEader */
         .navbar-brand {
-            margin-left: -50px;
+            margin-left: -20px;
+            margin-top: -10px;
         }
         .navbar-brand h1 {
             font-size: 40px;
@@ -171,7 +172,7 @@
             letter-spacing: 5px;
         }
         #logo-img {
-            background: none;
+            display: none;
         }
         #time {
             font-size: 17px;
@@ -191,6 +192,40 @@
             margin-left: 3px;
         }
         /*End HEader */
+    }
+    
+    @media( max-width: 414px) {
+        .navbar-brand {
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+        .navbar-brand h1 {
+            font-size: 30px;
+        }
+        #hookah {
+            font-size: 0.5em;
+            letter-spacing: 5px;
+        }
+        #logo-img {
+            display: none;
+        }
+        #time {
+            font-size: 17px;
+        }
+        #telegram {
+            width: 25px;
+            height: 25px;
+        }
+        #insta {
+            width: 40px;
+            height: 40px;
+        }
+        .navbar-social {
+            margin: -5px 40px 0px -45px;
+        }
+        .navbar-social #insta {
+            margin-left: 3px;
+        }
     }
     /*Для телефону*/
     /*
