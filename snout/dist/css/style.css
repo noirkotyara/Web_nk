@@ -98,6 +98,109 @@
        position: absolute;
    }
    /*THE END OF BODY*/
+   /* BEGIN JUMBOTRON */
+   
+   #tiles div a div {
+       height: 250px;
+       width: 100%;
+       margin: 10px auto;
+       margin-bottom: 25px;
+       position: relative;
+       overflow: hidden;
+   }
+   
+   #tiles div a div:hover {
+       box-shadow: 0 1px 5px 1px #0e0505;
+   }
+   
+   #tabak {
+       background: url(../images/main-content/tabak.jpg) no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 306px;
+   }
+   
+   #chashi {
+       background: url(../images/main-content/chasha.jpg) no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 306px;
+   }
+   
+   #ugol {
+       background: url(../images/main-content/ugol.jpg) no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 306px;
+   }
+   
+   #hookahh {
+       background: url(../images/main-content/hookah_1.jpg) no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 306px;
+   }
+   
+   #tabak span,
+   #ugol span,
+   #map span,
+   #chashi span,
+   #hookahh span {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       text-align: center;
+       font-family: 'Josefin Slab', serif;
+       font-size: 1.6em;
+       text-transform: uppercase;
+       background-color: #000;
+       color: #fff;
+       opacity: .8;
+   }
+   /* END OF THE JUMBUTRON */
+   /* BEGIN FOOTER */
+   
+   .panel-footer {
+       margin-top: 30px;
+       padding-bottom: 1px;
+       background-color: rgb(36, 34, 34);
+       border-top: 0;
+       margin: 0px 50px 0px 50px;
+   }
+   
+   .panel-footer div.row {
+       margin-bottom: 35px;
+   }
+   
+   #info {
+       color: rgb(255, 166, 0);
+       font-size: 20px;
+       padding-left: 90px;
+   }
+   
+   section {
+       margin-bottom: -30px;
+       margin-top: 10px;
+   }
+   
+   #wait {
+       font-weight: 1000;
+       text-align: center;
+       margin-left: -200px;
+   }
+   
+   #timeAndsocial {
+       color: white;
+       font-size: 20px;
+       padding-left: 30px;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   
+   .social {
+       margin-bottom: 0;
+   }
+   /* END OF THE FOOTER */
    
    @media (min-width: 1200px) and (max-width: 1293px) {
        #firstImg {
@@ -131,6 +234,10 @@
        #insta {
            width: 55px;
            height: 55px;
+       }
+       #tg:hover,
+       #tg:focus {
+           text-decoration: none;
        }
        /* End Header */
        /* Body */
@@ -209,6 +316,35 @@
            height: 35px;
        }
        /* End of the body */
+       /* Footer */
+       #info {
+           font-size: 18px;
+           padding-left: 10px;
+       }
+       #wait {
+           margin-left: -100px;
+       }
+       #timeAndsocial {
+           font-size: 18px;
+           padding-left: 20px;
+       }
+       /* End of the footer */
+   }
+   
+   @media ( min-width: 767px) and (max-width:818px) {
+       /* Footer */
+       #info {
+           font-size: 16px;
+           padding-left: 20px;
+       }
+       #wait {
+           margin-left: -100px;
+       }
+       #timeAndsocial {
+           font-size: 16px;
+           padding-left: 20px;
+       }
+       /* End of the footer */
    }
    
    @media ( min-width: 595px) and (max-width:767px) {
@@ -270,6 +406,27 @@
            height: 30px;
        }
        /* End of the body */
+       /* Footer */
+       #info {
+           font-size: 14px;
+           padding-left: 20px;
+       }
+       #wait {
+           margin-left: -100px;
+       }
+       #timeAndsocial {
+           font-size: 14px;
+           padding-left: 20px;
+       }
+       #telegram2 {
+           width: 25px;
+           height: 25px;
+       }
+       #insta2 {
+           width: 40px;
+           height: 40px;
+       }
+       /* End of the footer */
    }
    /*editional*/
    
@@ -360,6 +517,31 @@
            height: 20px;
        }
        /* End of the body */
+       /* Footer */
+       #info {
+           font-size: 14px;
+           padding-left: 20px;
+       }
+       #wait {
+           margin-left: 0px;
+           margin-bottom: 30px;
+       }
+       #timeAndsocial {
+           font-size: 14px;
+           padding-left: 20px;
+       }
+       #telegram2 {
+           width: 25px;
+           height: 25px;
+       }
+       #insta2 {
+           width: 40px;
+           height: 40px;
+       }
+       section {
+           text-align: center;
+       }
+       /* End of the footer */
    }
    
    @media (min-width: 415px) and (max-width: 460px) {
@@ -446,5 +628,40 @@
            width: 12px;
            height: 12px;
        }
+       #carouselExampleIndicators {
+           margin-top: -10px;
+           margin-bottom: -10px;
+       }
        /* End of the body */
+       /* Footer */
+       #tiles div a div {
+           height: 235px;
+           width: 80%;
+           margin: 0px auto;
+           margin-bottom: 15px;
+       }
+       #info {
+           font-size: 13px;
+           padding-left: 20px;
+       }
+       #wait {
+           margin-left: 0px;
+           margin-bottom: 30px;
+       }
+       #timeAndsocial {
+           font-size: 13px;
+           padding-left: 20px;
+       }
+       #telegram2 {
+           width: 25px;
+           height: 25px;
+       }
+       #insta2 {
+           width: 40px;
+           height: 40px;
+       }
+       section {
+           text-align: center;
+       }
+       /* End of the footer */
    }
