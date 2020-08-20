@@ -227,11 +227,7 @@
        color: white;
        padding-right: 10px;
        border-radius: 0 0 15px 15px;
-   }
-   
-   .tabak-photo #name:hover,
-   .tabak-photo #name:focus {
-       box-shadow: 2px solid yellow;
+       margin-bottom: 15px;
    }
    
    .tabak-photo div {
@@ -258,6 +254,33 @@
        margin-bottom: 20px;
    }
    /*THE END OF TABAK.HTML*/
+   /* CHASHA.HTML */
+   
+   .price-chasha {
+       font-size: 1.1em;
+       text-align: right;
+       background-color: black;
+       color: white;
+       padding-right: 10px;
+       border-radius: 0 0 15px 15px;
+       margin-bottom: 15px;
+   }
+   
+   .tabak-photo #name-chasha {
+       font-family: 'Caveat', cursive;
+       font-family: 'Montserrat Alternates', sans-serif;
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       width: 80px;
+       background-color: black;
+       text-align: center;
+       border-radius: 15px 15px 0 0;
+       color: white;
+       font-size: 20px;
+       width: 170px;
+   }
+   /* END CHASHA.HTML */
    
    @media (min-width: 1200px) and (max-width: 1293px) {
        #firstImg {
@@ -417,7 +440,7 @@
    }
    
    @media ( min-width: 595px) and (max-width:767px) {
-       /* HEader */
+       /* Header */
        .navbar-brand h1 {
            font-size: 50px;
            margin-right: 30px;
@@ -496,6 +519,14 @@
            height: 40px;
        }
        /* End of the footer */
+       /* CHASHA.HTML */
+       .price-chasha {
+           font-size: 15px;
+       }
+       .tabak-photo #name-chasha {
+           font-size: 15px;
+       }
+       /* END CHASHA.HTML */
    }
    /*editional*/
    
@@ -611,6 +642,14 @@
            text-align: center;
        }
        /* End of the footer */
+       /* CHASHA.HTML */
+       .price-chasha {
+           font-size: 15px;
+       }
+       .tabak-photo #name-chasha {
+           font-size: 15px;
+       }
+       /* END CHASHA.HTML */
    }
    
    @media (min-width: 415px) and (max-width: 460px) {
