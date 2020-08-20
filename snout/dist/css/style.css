@@ -58,8 +58,15 @@
        position: absolute;
        margin: 5px 40px 0 -70px;
    }
+   /* #insta {
+       background: url(../images/social/inst_2.svg) no-repeat;
+       display: block;
+   } */
    
    #telegram {
+       background: url(../images/Social/Telegram.svg);
+       width: 40px;
+       height: 40px;
        margin-top: 10px;
        margin-left: 10px;
    }
