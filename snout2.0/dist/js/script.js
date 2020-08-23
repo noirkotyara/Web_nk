@@ -17,6 +17,8 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
 
 });
 
+
+
 //function myFunction(x) {
 //    x.classList.toggle("change");
 
