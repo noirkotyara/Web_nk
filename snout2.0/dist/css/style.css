@@ -36,7 +36,7 @@
 }
 
 #navbar-map {
-    background: url(/dist/images/Main-content/mobile1.png) no-repeat;
+    background: url(../images/Main-content/mobile1.png) no-repeat;
     width: 96px;
     height: 96px;
 }
@@ -134,7 +134,7 @@ button:focus {
         font-size: 14px;
     }
     #navbar-map {
-        background: url(/dist/images/Main-content/mobile2.png) no-repeat;
+        background: url(../images/Main-content/mobile2.png) no-repeat;
         width: 80px;
         height: 80px;
     }
@@ -162,7 +162,7 @@ button:focus {
         border-bottom: 2px solid #fb872b;
     }
     #navbar-map {
-        background: url(/dist/images/Main-content/mobile2.png) no-repeat;
+        background: url(../images/Main-content/mobile2.png) no-repeat;
         width: 80px;
         height: 80px;
     }
@@ -190,7 +190,7 @@ button:focus {
         border-bottom: 2px solid #fb872b;
     }
     #navbar-map {
-        background: url(/dist/images/Main-content/mobile2.png) no-repeat;
+        background: url(../images/Main-content/mobile2.png) no-repeat;
         width: 80px;
         height: 80px;
     }
@@ -215,7 +215,7 @@ button:focus {
         border-bottom: 0px;
     }
     #navbar-map {
-        background-image: url(/dist/images/Main-content/mobile3.png);
+        background-image: url(../images/Main-content/mobile3.png);
         width: 60px;
         height: 60px;
         margin: 0 auto;
