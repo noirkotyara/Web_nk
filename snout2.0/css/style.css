@@ -2,6 +2,12 @@
 
 #navbar-header {
     background-color: black;
+    /* width: 100%; */
+    transition: top 0.3s;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 #navbar-header h1 {
@@ -123,18 +129,183 @@ button:focus {
 } */
 
 .carousel-inner img {
-    margin: 133px auto;
+    margin: 50px auto;
+    margin-bottom: 70px;
+}
+
+.carousel-indicators li {
+    position: relative;
+    margin-top: -2vw;
+    background-color: #fcf133;
+    display: none;
 }
 
 
-/* TOBACCOS SLIDER */
+/* tabak-block */
 
+
+/* Tabacos */
+
+#tabak {
+    color: white;
+    font-size: 25px;
+}
+
+#line1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 -20px;
+    color: black;
+    font-size: 2vw;
+}
+
+p #line1-1 {
+    background: #fff;
+    padding: 0 10px;
+    float: left;
+    margin-left: 100px;
+}
+
+p #line1-2 {
+    background: #fff;
+    padding: 0 10px;
+    float: right;
+    margin-right: 100px;
+}
+
+.spoiler {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    /*font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;*/
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    margin-top: -19%;
+    margin-left: 13%;
+    display: inline-block;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+
+/*#e6dd35cb*/
+
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 0 10px whitesmoke;
+    text-shadow: 0 0 10px whitesmoke;
+}
+
+.spoiler input[type=checkbox] {
+    display: none;
+}
+
+.Undertext {
+    width: 26vw;
+    height: 32.7vw;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #88888198;
+    text-align: center;
+    /* display: inline-flexbox; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 70%;
+    margin-right: -55%;
+    margin-bottom: 2%;
+    /* margin-top: 5%; */
+    line-height: 30px;
+}
+
+.nameT {
+    font-size: 23px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    font-size: 2vw;
+}
+
+.priceT {
+    font-size: 17px;
+    text-align: right;
+    padding-right: 11px;
+    border-bottom: 2px solid whitesmoke;
+    width: 100%;
+}
+
+.priceT,
+.nameT {
+    background-color: #000000;
+}
+
+.taste {
+    padding-top: 5px;
+}
+
+.taste,
+.priceT {
+    font-size: 1vw;
+}
+
+.spoiler input[type=checkbox]~.Undertext {
+    display: none;
+}
+
+.spoiler input[type=checkbox]:hover~.Undertext {
+    display: block;
+}
+
+.spoiler input[type=checkbox]:hover~.btn {
+    display: none;
+}
+
+
+/* End Tabacos */
+
+
+/* TOBACCO SLIDER*/
+
+#prevT {
+    background-color: black;
+    margin-left: 60%;
+}
+
+#nextT {
+    background-color: black;
+}
+
+#carouselExampleIndicatorsT>img {
+    margin-top: -40px;
+}
+
+
+/* END TOBACCO SLIDER*/
+
+
+/* END tabak-block */
+
+
+/* Accessorize SLIDER */
+
+
+/*
 .containerTobacco {
     margin: 0 auto;
     width: 250px;
     height: 200px;
     position: relative;
-    perspective: 1000px;
+    perspective: 500px;
 }
 
 .carouselTobacco {
@@ -201,7 +372,7 @@ button:focus {
     border-top: 1px solid #FFF;
     box-shadow: 0 5px 0 #999;
     transition: box-shadow 0.1s, top 0.1s;
-    margin-top: 800px;
+    margin-top: 1000px;
 }
 
 .nextTobacco:hover,
@@ -222,15 +393,40 @@ button:focus {
 .prevTobacco {
     left: 5em;
 }
+*/
 
 
-/* END TOBACCOS SLIDER */
+/* END ACCESSORIZE SLIDER */
 
 
 /* END BODY */
 
 
 /*MEDIA*/
+
+
+/* @media (max-width: 1430px) {
+    .Undertext {
+        width: 365px;
+        padding: 20px;
+        border-radius: 14px;
+        background-color: #88888198;
+        text-align: center;
+        display: inline-flexbox;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin-left: 70%;
+        margin-right: -55%;
+        margin-bottom: 2%;
+    }
+} */
+
+@media (max-width: 1281px) {
+    .carousel-inner img {
+        margin: 50px auto;
+        margin-bottom: 45px;
+    }
+}
 
 @media(min-width:1161px) and (max-width: 1280px) {
     /* HEADER */
@@ -257,9 +453,19 @@ button:focus {
     }
     /* END HEADER */
     /* Body */
-    .carousel-inner img {
-        margin: 129px auto;
+    .btn {
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 12%;
     }
+    .Undertext {
+        margin-left: 70%;
+        margin-right: -55%;
+        margin-bottom: 0%;
+    }
+    /* #nameT {
+        font-size: 20px;
+    } */
     /* END BODY */
 }
 
@@ -290,9 +496,20 @@ button:focus {
     }
     /* END HEADER */
     /* Body */
-    .carousel-inner img {
-        margin: 112px auto;
+    .btn {
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 12%;
     }
+    .Undertext {
+        margin-left: 70%;
+        margin-right: -55%;
+        margin-bottom: -2%;
+    }
+    /* .carousel-inner img {
+        margin: 112px auto;
+    } */
     /* END BODY */
 }
 
@@ -320,6 +537,17 @@ button:focus {
         background: url(../images/Main-content/mobile2.png) no-repeat;
         width: 80px;
         height: 80px;
+    }
+    .btn {
+        font-size: 17px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 12%;
+    }
+    .Undertext {
+        margin-left: 70%;
+        margin-right: -55%;
+        margin-bottom: -4%;
     }
 }
 
@@ -359,12 +587,122 @@ button:focus {
     }
     /* END HEADER */
     /* Body */
-    .carousel-inner img {
-        margin: 105px auto;
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 10%;
+    }
+    .Undertext {
+        margin-left: 70%;
+        margin-right: -55%;
+        margin-bottom: -6%;
+    }
+    .taste {
+        line-height: 25px;
     }
     /* END BODY */
 }
 
-@media(max-width:767px) {}
+@media (max-width: 860px) {
+    .taste {
+        line-height: 22px;
+    }
+    .nameT {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
 
-@media(max-width:479px) {}
+@media(max-width:767px) {
+    p #line1-1 {
+        display: none;
+    }
+    #tabak {
+        text-align: center;
+        font-size: 22px;
+    }
+    p #line1-2 {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .taste {
+        line-height: 20px;
+    }
+    .nameT {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .Undertext {
+        margin-bottom: -10%;
+    }
+    .btn {
+        margin-top: -15%;
+    }
+}
+
+@media(max-width:730px) {
+    .Undertext {
+        margin-top: -22%;
+    }
+}
+
+@media(max-width:705px) {
+    .Undertext {
+        margin-top: -22%;
+    }
+    .taste {
+        line-height: 18px;
+    }
+    .nameT {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width:630px) {
+    .Undertext {
+        margin-bottom: -30px;
+    }
+    .btn {
+        margin-bottom: -15%;
+        font-size: 12px;
+        margin-left: 8%;
+    }
+    .nameT {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width:415px) {
+    p #line1-2 {
+        font-size: 15px;
+    }
+    .Undertext {
+        margin-bottom: -30px;
+    }
+    .btn {
+        margin-top: -10%;
+        font-size: 9px;
+        margin-left: 6%;
+    }
+    .nameT {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .carousel-inner img {
+        margin: 106px auto;
+        margin-bottom: 0;
+    }
+    .carousel-inner img:nth-child(1) {
+        margin: 50px auto;
+        margin-bottom: 0;
+    }
+}

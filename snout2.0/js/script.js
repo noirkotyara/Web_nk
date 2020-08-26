@@ -17,6 +17,13 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
 
 });
 
+// function change() {
+//     var $current = $(".btn");
+//     $current.text($current.text().replace("View more", "View less"));
+// }
+
+
+
 /* TOBACCOS CAROUSEL */
 var carousel = $(".carouselTobacco"),
     currdeg = 0;
