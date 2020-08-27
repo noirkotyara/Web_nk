@@ -129,7 +129,7 @@ button:focus {
 } */
 
 .carousel-inner img {
-    margin: 50px auto;
+    margin: 135px auto;
     margin-bottom: 70px;
 }
 
@@ -147,9 +147,6 @@ button:focus {
 }
 
 
-/* tabak-block */
-
-
 /* Tabacos */
 
 #tabak {
@@ -157,7 +154,13 @@ button:focus {
     font-size: 25px;
 }
 
-#line1 {
+#features {
+    color: white;
+    font-size: 25px;
+}
+
+#line1,
+#line2 {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
@@ -167,14 +170,16 @@ button:focus {
     font-size: 2vw;
 }
 
-p #line1-1 {
+p #line1-1,
+#line2-2 {
     background: #fff;
     padding: 0 10px;
     float: left;
     margin-left: 100px;
 }
 
-p #line1-2 {
+p #line1-2,
+#line2-1 {
     background: #fff;
     padding: 0 10px;
     float: right;
@@ -289,7 +294,7 @@ p #line1-2 {
 /* End Tabacos */
 
 
-/* TOBACCO SLIDER*/
+/* ACSESSORIZE */
 
 #nextT {
     /* background-color: black; */
@@ -318,14 +323,20 @@ p #line1-2 {
 
 /* Accessorize SLIDER */
 
+#features-block {
+    background-color: lightgray;
+    background: url(../images/Main-content/lighter.jpg);
+    margin-top: 1.3%;
+    height: 220px;
+    text-align: center;
+}
 
-/*
 .containerTobacco {
-    margin: 0 auto;
+    margin: 250px auto;
     width: 250px;
     height: 200px;
     position: relative;
-    perspective: 500px;
+    perspective: 400px;
 }
 
 .carouselTobacco {
@@ -352,7 +363,12 @@ p #line1-2 {
 
 .a {
     transform: rotateY(0deg) translateZ(250px);
-    background: #ed1c24;
+    background-color: #fcf133;
+}
+
+.acce {
+    margin-top: -10%;
+    border-radius: 20px;
 }
 
 .b {
@@ -413,7 +429,6 @@ p #line1-2 {
 .prevTobacco {
     left: 5em;
 }
-*/
 
 
 /* END ACCESSORIZE SLIDER */
@@ -443,8 +458,12 @@ p #line1-2 {
 
 @media (max-width: 1281px) {
     .carousel-inner img {
-        margin: 50px auto;
+        margin: 110px auto;
         margin-bottom: 45px;
+    }
+    .containerTobacco {
+        width: 200px;
+        height: 150px;
     }
 }
 
@@ -486,6 +505,13 @@ p #line1-2 {
     /* #nameT {
         font-size: 20px;
     } */
+    .containerTobacco {
+        margin: 200px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 480px;
+        /* margin-right: 0%; */
+    }
     /* END BODY */
 }
 
@@ -530,6 +556,13 @@ p #line1-2 {
     /* .carousel-inner img {
         margin: 112px auto;
     } */
+    .containerTobacco {
+        margin: 180px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 480px;
+        /* margin-right: 0%; */
+    }
     /* END BODY */
 }
 
@@ -639,6 +672,16 @@ p #line1-2 {
         font-size: 14px;
         line-height: 19px;
     }
+    .carousel-inner img {
+        margin: 100px auto;
+    }
+    .containerTobacco {
+        margin: 160px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 480px;
+        /* margin-right: 0%; */
+    }
     /* END BODY */
 }
 
@@ -658,17 +701,26 @@ p #line1-2 {
         font-size: 13px;
         line-height: 18px;
     }
+    .containerTobacco {
+        margin: 150px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 500px;
+        /* margin-right: 0%; */
+    }
 }
 
 @media(max-width:767px) {
-    p #line1-1 {
+    p #line1-1,
+    #line2-1 {
         display: none;
     }
     #tabak {
         text-align: center;
         font-size: 22px;
     }
-    p #line1-2 {
+    p #line1-2,
+    #line2-2 {
         float: none;
         margin-right: 0;
         margin-left: 0;
@@ -699,6 +751,13 @@ p #line1-2 {
     .priceT {
         font-size: 13px;
         line-height: 17px;
+    }
+    .containerTobacco {
+        margin: 150px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 550px;
+        /* margin-right: 0%; */
     }
 }
 
@@ -733,9 +792,20 @@ p #line1-2 {
         font-size: 11px;
         line-height: 16px;
     }
+    .containerTobacco {
+        margin: 130px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 700px;
+        /* margin-right: 0%; */
+    }
 }
 
 @media(max-width:630px) {
+    /* .carousel-inner img {
+        margin: 106px auto;
+        margin-bottom: 0;
+    } */
     .Undertext {
         padding: 5px;
         margin-bottom: -30px;
@@ -754,6 +824,13 @@ p #line1-2 {
         font-size: 11px;
         line-height: 16px;
     }
+    .containerTobacco {
+        margin: 90px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 4000px;
+        /* margin-right: 0%; */
+    }
 }
 
 @media(max-width:440px) {
@@ -767,7 +844,8 @@ p #line1-2 {
     .ImgT-2 {
         display: block;
     }
-    p #line1-2 {
+    p #line1-2,
+    #line2-2 {
         font-size: 15px;
     }
     .Undertext {
@@ -808,6 +886,26 @@ p #line1-2 {
     #carouselExampleIndicatorsT img {
         margin: 50px auto;
         margin-bottom: 0;
+    }
+    .containerTobacco {
+        margin: 60px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 4000px;
+        /* margin-right: 0%; */
+    }
+    #features-block {
+        background-color: lightgray;
+        background: url(../images/Main-content/lighter.jpg);
+        margin-top: 0%;
+    }
+    .carouselTobacco {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        margin-top: 7px;
     }
 }
 
