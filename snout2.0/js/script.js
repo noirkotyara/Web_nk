@@ -47,6 +47,15 @@ function rotate(e) {
 }
 /* END TOBACCOS CAROUSEL */
 
+$('#carouselExampleIndicatorsT').carousel({
+    interval: 0
+});
+$(function() {
+    $(".Undertext").onclick(function() {
+        $(".Undertext").slideToggle();
+    });
+});
+
 
 //function myFunction(x) {
 //    x.classList.toggle("change");

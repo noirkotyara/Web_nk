@@ -140,6 +140,12 @@ button:focus {
     display: none;
 }
 
+#prevB,
+#nextB {
+    height: 4vw;
+    width: 4vw;
+}
+
 
 /* tabak-block */
 
@@ -242,6 +248,7 @@ p #line1-2 {
     padding-right: 11px;
     border-bottom: 2px solid whitesmoke;
     width: 100%;
+    padding-bottom: 5px;
 }
 
 .priceT,
@@ -270,19 +277,32 @@ p #line1-2 {
     display: none;
 }
 
+.ImgT {
+    display: block;
+}
+
+.ImgT-2 {
+    display: none;
+}
+
 
 /* End Tabacos */
 
 
 /* TOBACCO SLIDER*/
 
-#prevT {
-    background-color: black;
-    margin-left: 60%;
+#nextT {
+    /* background-color: black; */
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    width: 4vw;
+    height: 4vw;
 }
 
-#nextT {
-    background-color: black;
+#prevT {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    transform: rotate(180deg);
+    width: 4vw;
+    height: 4vw;
 }
 
 #carouselExampleIndicatorsT>img {
@@ -548,6 +568,15 @@ p #line1-2 {
         margin-left: 70%;
         margin-right: -55%;
         margin-bottom: -4%;
+        padding: 12px;
+    }
+    .nameT {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .priceT {
+        font-size: 14px;
+        line-height: 19px;
     }
 }
 
@@ -597,9 +626,18 @@ p #line1-2 {
         margin-left: 70%;
         margin-right: -55%;
         margin-bottom: -6%;
+        padding: 9px;
     }
     .taste {
         line-height: 25px;
+    }
+    .nameT {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .priceT {
+        font-size: 14px;
+        line-height: 19px;
     }
     /* END BODY */
 }
@@ -608,9 +646,17 @@ p #line1-2 {
     .taste {
         line-height: 22px;
     }
+    .Undertext {
+        margin-bottom: -10%;
+        padding: 9px;
+    }
     .nameT {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 22px;
+    }
+    .priceT {
+        font-size: 13px;
+        line-height: 18px;
     }
 }
 
@@ -641,21 +687,40 @@ p #line1-2 {
     }
     .Undertext {
         margin-bottom: -10%;
+        padding: 9px;
     }
     .btn {
         margin-top: -15%;
+    }
+    .nameT {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .priceT {
+        font-size: 13px;
+        line-height: 17px;
     }
 }
 
 @media(max-width:730px) {
     .Undertext {
         margin-top: -22%;
+        padding: 9px;
+    }
+    .nameT {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .priceT {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 
 @media(max-width:705px) {
     .Undertext {
-        margin-top: -22%;
+        margin-bottom: -17%;
+        padding: 7px;
     }
     .taste {
         line-height: 18px;
@@ -664,45 +729,128 @@ p #line1-2 {
         font-size: 13px;
         line-height: 18px;
     }
-}
-
-@media(max-width:630px) {
-    .Undertext {
-        margin-bottom: -30px;
-    }
-    .btn {
-        margin-bottom: -15%;
-        font-size: 12px;
-        margin-left: 8%;
-    }
-    .nameT {
+    .priceT {
         font-size: 11px;
         line-height: 16px;
     }
 }
 
-@media(max-width:415px) {
+@media(max-width:630px) {
+    .Undertext {
+        padding: 5px;
+        margin-bottom: -30px;
+    }
+    .btn {
+        margin-bottom: -15%;
+        font-size: 14px;
+        margin-left: 8%;
+    }
+    .nameT {
+        font-size: 11px;
+        line-height: 16px;
+        padding-bottom: 0px;
+    }
+    .priceT {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width:440px) {
+    span.carousel-control-next-icon,
+    span.carousel-control-prev-icon {
+        margin-top: 50px;
+    }
+    .ImgT {
+        display: none;
+    }
+    .ImgT-2 {
+        display: block;
+    }
     p #line1-2 {
         font-size: 15px;
     }
     .Undertext {
-        margin-bottom: -30px;
+        padding: 20px;
+        border-radius: 14px;
+        background-color: black;
+        /* display: inline-flexbox; */
+        margin-left: 1%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: -18%;
+        /* margin-top: 5%; */
+        width: 100%;
+        padding: 6px;
+        height: 250px;
     }
     .btn {
-        margin-top: -10%;
+        margin-left: -11%;
+        margin-top: 2%;
         font-size: 9px;
-        margin-left: 6%;
     }
     .nameT {
-        font-size: 7px;
-        line-height: 10px;
+        background-color: #88888198;
+        font-size: 15px;
+        line-height: 18px;
+        width: 200px;
+    }
+    .priceT {
+        background-color: #88888198;
+        font-size: 15px;
+        line-height: 18px;
+        padding-bottom: 5px;
     }
     .carousel-inner img {
         margin: 106px auto;
         margin-bottom: 0;
     }
-    .carousel-inner img:nth-child(1) {
+    #carouselExampleIndicatorsT img {
         margin: 50px auto;
         margin-bottom: 0;
+    }
+}
+
+@media(max-width:376px) {
+    .Undertext {
+        padding: 20px;
+        border-radius: 14px;
+        background-color: black;
+        /* display: inline-flexbox; */
+        margin-left: 1%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: -18%;
+        /* margin-top: 5%; */
+        width: 100%;
+        padding: 6px;
+        height: 220px;
+    }
+    .btn {
+        margin-left: -11%;
+        margin-top: 3%;
+        font-size: 9px;
+    }
+}
+
+@media(max-width:321px) {
+    .Undertext {
+        padding: 20px;
+        border-radius: 14px;
+        background-color: black;
+        /* display: inline-flexbox; */
+        margin-left: 1%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: -19%;
+        /* margin-top: 5%; */
+        width: 100%;
+        padding: 6px;
+        height: 190px;
+    }
+    .btn {
+        margin-left: -14%;
+        margin-top: 5%;
+        font-size: 9px;
     }
 }
