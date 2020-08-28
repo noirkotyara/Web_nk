@@ -396,37 +396,46 @@ p #line1-2,
     background: #8c6239;
 }
 
-.nextTobacco,
-.prevTobacco {
-    color: #444;
-    position: absolute;
-    top: 100px;
-    padding: 1em 2em;
+.nextA {
+    background: url(../images/Accessories/next.png);
+    width: 96px;
+    height: 96px;
+    float: right;
+    margin-top: -14%;
+    margin-right: 10%;
+}
+
+.prevA {
+    background: url(../images/Accessories/prev.png);
+    /* border: 2px solid yellow; */
+    width: 96px;
+    height: 96px;
+    float: left;
+    margin-top: -14%;
+    margin-left: 10%;
+}
+
+.prevA:hover {
+    background: url(../images/Accessories/prevPressed.png);
     cursor: pointer;
-    background: #CCC;
-    border-radius: 5px;
-    border-top: 1px solid #FFF;
-    box-shadow: 0 5px 0 #999;
-    transition: box-shadow 0.1s, top 0.1s;
-    margin-top: 1000px;
 }
 
-.nextTobacco:hover,
-.prevTobacco:hover {
-    color: #000;
+.nextA:hover {
+    background: url(../images/Accessories/nextPressed.png);
+    cursor: pointer;
 }
 
-.nextTobacco:active,
-.prevTobacco:active {
-    top: 104px;
-    box-shadow: 0 1px 0 #999;
+.prevA:active {}
+
+.nextA:active {
+    background: url(../images/Accessories/next.png);
 }
 
-.nextTobacco {
+.nextA {
     right: 5em;
 }
 
-.prevTobacco {
+.prevA {
     left: 5em;
 }
 
@@ -513,6 +522,25 @@ p #line1-2,
         /* margin-right: 0%; */
     }
     /* END BODY */
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: -10%;
+        margin-right: 10%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        /* border: 2px solid yellow; */
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: -10%;
+        margin-left: 10%;
+    }
+    /* END ACCESSORIZE */
 }
 
 @media(min-width:1027px) and (max-width:1160px) {
@@ -563,10 +591,29 @@ p #line1-2,
         perspective: 480px;
         /* margin-right: 0%; */
     }
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: 2%;
+        margin-right: 40%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        /* border: 2px solid yellow; */
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: 2%;
+        margin-left: 40%;
+    }
+    /* END ACCESSORIZE */
     /* END BODY */
 }
 
-@media(min-width:992px) and (max-width:1126px) {
+@media(min-width:992px) and (max-width:1026px) {
     /* HEADER */
     #navbar-header h1 {
         font-size: 35px;
@@ -610,6 +657,30 @@ p #line1-2,
     .priceT {
         font-size: 14px;
         line-height: 19px;
+    }
+    .containerTobacco {
+        margin: 180px auto;
+        width: 250px;
+        height: 150px;
+        perspective: 480px;
+        /* margin-right: 0%; */
+    }
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: 2%;
+        margin-right: 38%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        /* border: 2px solid yellow; */
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: 2%;
+        margin-left: 38%;
     }
 }
 
@@ -683,6 +754,22 @@ p #line1-2,
         /* margin-right: 0%; */
     }
     /* END BODY */
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: 4%;
+        margin-right: 38%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: 4%;
+        margin-left: 38%;
+    }
 }
 
 @media (max-width: 860px) {
@@ -707,6 +794,22 @@ p #line1-2,
         height: 150px;
         perspective: 500px;
         /* margin-right: 0%; */
+    }
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: 4%;
+        margin-right: 36%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: 4%;
+        margin-left: 36%;
     }
 }
 
@@ -758,6 +861,22 @@ p #line1-2,
         height: 150px;
         perspective: 550px;
         /* margin-right: 0%; */
+    }
+    .nextA {
+        background: url(../images/Accessories/next.png);
+        width: 96px;
+        height: 96px;
+        float: right;
+        margin-top: 2%;
+        margin-right: 33%;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev.png);
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-top: 2%;
+        margin-left: 33%;
     }
 }
 
@@ -831,6 +950,31 @@ p #line1-2,
         perspective: 4000px;
         /* margin-right: 0%; */
     }
+    .carouselTobacco {
+        margin-top: 7.5px;
+    }
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next-sm.png);
+        width: 64px;
+        height: 64px;
+        float: right;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev-sm.png);
+        width: 64px;
+        height: 64px;
+        float: left;
+    }
+    .prevA:hover {
+        background: url(../images/Accessories/prev-sm-Pressed.png);
+        cursor: pointer;
+    }
+    .nextA:hover {
+        background: url(../images/Accessories/next-sm-Pressed.png);
+        cursor: pointer;
+    }
+    /* END ACCESSORIZE */
 }
 
 @media(max-width:440px) {
@@ -907,6 +1051,31 @@ p #line1-2,
         transition: transform 1s;
         margin-top: 7px;
     }
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-right: 40%;
+        margin-top: 17px;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-left: 40%;
+        margin-right: 0%;
+        margin-top: 17px;
+    }
+    .prevA:hover {
+        background: url(../images/Accessories/prev-xs-Pressed.png);
+        cursor: pointer;
+    }
+    .nextA:hover {
+        background: url(../images/Accessories/next-xs-Pressed.png);
+        cursor: pointer;
+    }
+    /* END ACCESSORIZE */
 }
 
 @media(max-width:376px) {
@@ -929,6 +1098,30 @@ p #line1-2,
         margin-top: 3%;
         font-size: 9px;
     }
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-right: 38%;
+        margin-top: 17px;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-left: 38%;
+        margin-top: 17px;
+    }
+    .prevA:hover {
+        background: url(../images/Accessories/prev-xs-Pressed.png);
+        cursor: pointer;
+    }
+    .nextA:hover {
+        background: url(../images/Accessories/next-xs-Pressed.png);
+        cursor: pointer;
+    }
+    /* END ACCESSORIZE */
 }
 
 @media(max-width:321px) {
@@ -951,4 +1144,29 @@ p #line1-2,
         margin-top: 5%;
         font-size: 9px;
     }
+    /* ACCESSORIZE */
+    .nextA {
+        background: url(../images/Accessories/next-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-right: 37%;
+        margin-top: 17px;
+    }
+    .prevA {
+        background: url(../images/Accessories/prev-xs.png);
+        width: 38px;
+        height: 38px;
+        margin-left: 37%;
+        margin-right: 0%;
+        margin-top: 17px;
+    }
+    .prevA:hover {
+        background: url(../images/Accessories/prev-xs-Pressed.png);
+        cursor: pointer;
+    }
+    .nextA:hover {
+        background: url(../images/Accessories/next-xs-Pressed.png);
+        cursor: pointer;
+    }
+    /* END ACCESSORIZE */
 }

@@ -28,8 +28,8 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
 var carousel = $(".carouselTobacco"),
     currdeg = 0;
 
-$(".nextTobacco").on("click", { d: "n" }, rotate);
-$(".prevTobacco").on("click", { d: "p" }, rotate);
+$(".nextA").on("click", { d: "n" }, rotate);
+$(".prevA").on("click", { d: "p" }, rotate);
 
 function rotate(e) {
     if (e.data.d == "n") {
