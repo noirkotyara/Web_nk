@@ -154,13 +154,17 @@ button:focus {
     font-size: 25px;
 }
 
-#features {
+#features,
+#ugoli,
+#rent {
     color: white;
     font-size: 25px;
 }
 
 #line1,
-#line2 {
+#line2,
+#line3,
+#line4 {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
@@ -171,7 +175,9 @@ button:focus {
 }
 
 p #line1-1,
-#line2-2 {
+#line2-2,
+#line3-1,
+#line4-2 {
     background: #fff;
     padding: 0 10px;
     float: left;
@@ -179,7 +185,9 @@ p #line1-1,
 }
 
 p #line1-2,
-#line2-1 {
+#line2-1,
+#line3-2,
+#line4-1 {
     background: #fff;
     padding: 0 10px;
     float: right;
@@ -439,8 +447,82 @@ p #line1-2,
     left: 5em;
 }
 
+#accessories {
+    margin-bottom: 230px;
+}
+
 
 /* END ACCESSORIZE SLIDER */
+
+
+/* UGOL */
+
+#ugol-block {}
+
+div#main-content.container {}
+
+.row {
+    padding: 0 auto;
+    width: 100%;
+    margin: 110px auto;
+}
+
+#sizeC1 {}
+
+#sizeC2 {}
+
+#carouselExampleIndicatorsC1 {}
+
+#nextC1 {
+    /* background-color: black; */
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    width: 4vw;
+    height: 4vw;
+}
+
+#prevC1 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    transform: rotate(180deg);
+    width: 4vw;
+    height: 4vw;
+}
+
+#nextC2 {
+    /* background-color: black; */
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    width: 4vw;
+    height: 4vw;
+}
+
+#prevC2 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/18/57/arrow-1314470_960_720.png);
+    transform: rotate(180deg);
+    width: 4vw;
+    height: 4vw;
+}
+
+.carousel-item-tobacco {
+    transition: -webkit-transform .20s linear;
+    transition: transform .20s linear;
+    transition: transform .20s linear, -webkit-transform 0.6s linear;
+}
+
+
+/* END UGOL */
+
+
+/* RENT */
+
+#rent-block {
+    background-image: url(../images/Main-content/gif\ _smoke.gif);
+    height: 500px;
+    width: 100%;
+    margin-top: 6%;
+    opacity: 0.6;
+}
+
+
+/* END RENT */
 
 
 /* END BODY */
@@ -815,7 +897,9 @@ p #line1-2,
 
 @media(max-width:767px) {
     p #line1-1,
-    #line2-1 {
+    #line2-1,
+    #line3-1,
+    #line4-1 {
         display: none;
     }
     #tabak {
@@ -823,7 +907,9 @@ p #line1-2,
         font-size: 22px;
     }
     p #line1-2,
-    #line2-2 {
+    #line2-2,
+    #line3-2,
+    #line4-2 {
         float: none;
         margin-right: 0;
         margin-left: 0;
@@ -990,7 +1076,9 @@ p #line1-2,
         display: block;
     }
     p #line1-2,
-    #line2-2 {
+    #line2-2,
+    #line3-2,
+    #line4-2 {
         font-size: 15px;
     }
     .Undertext {
@@ -1063,7 +1151,7 @@ p #line1-2,
         background-color: rgb(126, 78, 78);
         background: url(../images/Main-content/lighter.jpg);
         margin-top: 0%;
-        height: 205px;
+        height: 210px;
     }
     .carouselTobacco {
         height: 100%;
@@ -1095,6 +1183,9 @@ p #line1-2,
     .nextA:hover {
         background: url(../images/Accessories/next-xs-Pressed.png);
         cursor: pointer;
+    }
+    #accessories {
+        margin-bottom: 22px;
     }
     /* END ACCESSORIZE */
 }

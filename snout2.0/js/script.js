@@ -50,6 +50,14 @@ function rotate(e) {
 $('#carouselExampleIndicatorsT').carousel({
     interval: 0
 });
+$('#carouselExampleIndicatorsC1').carousel({
+    interval: 0
+});
+$('#carouselExampleIndicatorsC2').carousel({
+    interval: 0
+});
+
+
 $(function() {
     $(".Undertext").onclick(function() {
         $(".Undertext").slideToggle();
