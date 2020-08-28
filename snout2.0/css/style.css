@@ -978,6 +978,7 @@ p #line1-2,
 }
 
 @media(max-width:440px) {
+    #navbar-header {}
     span.carousel-control-next-icon,
     span.carousel-control-prev-icon {
         margin-top: 50px;
@@ -1031,17 +1032,38 @@ p #line1-2,
         margin: 50px auto;
         margin-bottom: 0;
     }
+    .a {
+        transform: rotateY(0deg) translateZ(217px);
+    }
+    .b {
+        transform: rotateY(60deg) translateZ(217px);
+    }
+    .c {
+        transform: rotateY(120deg) translateZ(217px);
+    }
+    .d {
+        transform: rotateY(180deg) translateZ(217px);
+    }
+    .e {
+        transform: rotateY(240deg) translateZ(217px);
+    }
+    .f {
+        transform: rotateY(300deg) translateZ(217px);
+    }
     .containerTobacco {
         margin: 60px auto;
         width: 250px;
-        height: 150px;
+        height: 210px;
         perspective: 4000px;
+        overflow: hidden;
+        border-radius: 20px;
         /* margin-right: 0%; */
     }
     #features-block {
-        background-color: lightgray;
+        background-color: rgb(126, 78, 78);
         background: url(../images/Main-content/lighter.jpg);
         margin-top: 0%;
+        height: 205px;
     }
     .carouselTobacco {
         height: 100%;
@@ -1057,15 +1079,14 @@ p #line1-2,
         width: 38px;
         height: 38px;
         margin-right: 40%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA {
         background: url(../images/Accessories/prev-xs.png);
         width: 38px;
         height: 38px;
         margin-left: 40%;
-        margin-right: 0%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA:hover {
         background: url(../images/Accessories/prev-xs-Pressed.png);
@@ -1104,14 +1125,14 @@ p #line1-2,
         width: 38px;
         height: 38px;
         margin-right: 38%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA {
         background: url(../images/Accessories/prev-xs.png);
         width: 38px;
         height: 38px;
         margin-left: 38%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA:hover {
         background: url(../images/Accessories/prev-xs-Pressed.png);
@@ -1150,7 +1171,7 @@ p #line1-2,
         width: 38px;
         height: 38px;
         margin-right: 37%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA {
         background: url(../images/Accessories/prev-xs.png);
@@ -1158,7 +1179,7 @@ p #line1-2,
         height: 38px;
         margin-left: 37%;
         margin-right: 0%;
-        margin-top: 17px;
+        margin-top: -55px;
     }
     .prevA:hover {
         background: url(../images/Accessories/prev-xs-Pressed.png);
