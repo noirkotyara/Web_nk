@@ -17,6 +17,10 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
 
 });
 
+// $('.single-item').slick();
+
+
+
 // function change() {
 //     var $current = $(".btn");
 //     $current.text($current.text().replace("View more", "View less"));
