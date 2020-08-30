@@ -156,7 +156,8 @@ button:focus {
 
 #features,
 #ugoli,
-#rent {
+#rent,
+#aboutUs {
     color: white;
     font-size: 25px;
 }
@@ -164,7 +165,8 @@ button:focus {
 #line1,
 #line2,
 #line3,
-#line4 {
+#line4,
+#line5 {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
@@ -177,7 +179,8 @@ button:focus {
 p #line1-1,
 #line2-2,
 #line3-1,
-#line4-2 {
+#line4-2,
+#line5-1 {
     background: #fff;
     padding: 0 10px;
     float: left;
@@ -187,7 +190,8 @@ p #line1-1,
 p #line1-2,
 #line2-1,
 #line3-2,
-#line4-1 {
+#line4-1,
+#line5-2 {
     background: #fff;
     padding: 0 10px;
     float: right;
@@ -433,8 +437,6 @@ p #line1-2,
     cursor: pointer;
 }
 
-.prevA:active {}
-
 .nextA:active {
     background: url(../images/Accessories/next.png);
 }
@@ -457,21 +459,11 @@ p #line1-2,
 
 /* UGOL */
 
-#ugol-block {}
-
-div#main-content.container {}
-
 .row {
     padding: 0 auto;
     width: 100%;
     margin: 110px auto;
 }
-
-#sizeC1 {}
-
-#sizeC2 {}
-
-#carouselExampleIndicatorsC1 {}
 
 #nextC1 {
     /* background-color: black; */
@@ -514,7 +506,6 @@ div#main-content.container {}
 /* RENT */
 
 #rent-block {
-    position: absolute;
     background: url(../images/Hookah/back.png) no-repeat;
     width: 100%;
     margin-top: 7%;
@@ -559,11 +550,97 @@ div#main-content.container {}
 }
 
 #hookah-inf {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 
 /* END RENT */
+
+
+/* ABOUT US */
+
+#info {
+    height: 30vw;
+    padding: 5%;
+    padding-top: 8%;
+    padding-left: 2%;
+}
+
+#inst {
+    text-decoration: none;
+}
+
+#calendar {
+    width: 6vw;
+    height: 6vw;
+}
+
+#map {
+    text-align: center;
+}
+
+#time {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3vw;
+    padding-top: 2.4%;
+    position: absolute;
+}
+
+#discr {
+    margin-top: 4%;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+    letter-spacing: 0;
+    padding-left: 10%;
+}
+
+.social {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2vw;
+    letter-spacing: 0;
+    padding-left: 15%;
+}
+
+#info {
+    border-radius: 30px 0 0 30px;
+}
+
+#map,
+#info {
+    background: #fcf133;
+}
+
+#background-info {
+    background: #fb892b6e;
+    border-radius: 30px 0 0 30px;
+    position: absolute;
+    width: 34.7vw;
+    padding-left: 5%;
+}
+
+iframe {
+    width: 90%;
+    height: 100%;
+}
+
+a#phone {
+    color: black;
+    font-size: 1.8vw;
+    letter-spacing: 0;
+    /* padding-left: 25%; */
+    text-align: center;
+}
+
+#phone:hover,
+#phone:active {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px white, 1px 1px 4px black;
+}
+
+
+/* END ABOUT US */
 
 
 /* END BODY */
@@ -669,6 +746,26 @@ div#main-content.container {}
 @media(max-width:1200px) {
     #rent-block {
         height: 72.5%;
+    }
+    #background-info {
+        position: absolute;
+        width: 37vw;
+        padding-left: 10%;
+        margin-top: -15px;
+    }
+    #info {
+        padding-right: 0;
+    }
+    #time {
+        font-size: 3vw;
+        padding-top: 2.4%;
+    }
+    #discr {
+        color: black;
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.2vw;
+        letter-spacing: 0;
+        padding-left: 10%;
     }
 }
 
@@ -900,7 +997,6 @@ div#main-content.container {}
         margin-left: 38%;
     }
     #rent-block {
-        position: absolute;
         background: url(../images/Hookah/back-md.png) no-repeat;
         width: 100%;
         height: 129%;
@@ -931,6 +1027,51 @@ div#main-content.container {}
     #hookah-inf {
         padding-top: 10%;
     }
+    /* MAP */
+    #rent-block {
+        position: relative;
+    }
+    #background-info {
+        width: 96%;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding-left: 0;
+        margin-top: -5%;
+        /* margin: 0 auto; */
+        height: 100%;
+    }
+    #info {
+        padding-right: 0;
+        border-radius: 30px 30px 0 0;
+    }
+    #time {
+        font-size: 3.5vw;
+        padding-top: 1%;
+        padding-left: 0;
+    }
+    #discr {
+        margin-top: 2%;
+        font-size: 2vw;
+        padding: 0;
+    }
+    #map {
+        height: 50vw;
+        padding: 40px;
+    }
+    #calendar {
+        margin-left: -30%;
+    }
+    .social {
+        font-size: 2vw;
+        padding: 0;
+    }
+    a#phone {
+        font-size: 2vw;
+    }
+    iframe {
+        width: 80%;
+    }
+    /* END MAP */
 }
 
 @media (max-width: 860px) {
@@ -972,13 +1113,49 @@ div#main-content.container {}
         margin-top: 4%;
         margin-left: 36%;
     }
+    /* MAP */
+    #rent-block {
+        position: relative;
+    }
+    #background-info {
+        width: 96%;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding-left: 0;
+        margin-top: -5%;
+        /* margin: 0 auto; */
+        height: 100%;
+    }
+    #info {
+        padding-right: 0;
+        border-radius: 30px 30px 0 0;
+    }
+    #time {
+        font-size: 3.5vw;
+        padding-top: 1%;
+        padding-left: 0;
+    }
+    #map {
+        height: 50vw;
+        padding: 40px;
+    }
+    #calendar {
+        margin-left: -30%;
+    }
+    .social {
+        font-size: 2vw;
+        margin-top: -3%;
+        padding: 0;
+    }
+    /* END MAP */
 }
 
 @media(max-width:767px) {
     p #line1-1,
     #line2-1,
     #line3-1,
-    #line4-1 {
+    #line4-1,
+    #line5-1 {
         display: none;
     }
     #tabak {
@@ -988,7 +1165,8 @@ div#main-content.container {}
     p #line1-2,
     #line2-2,
     #line3-2,
-    #line4-2 {
+    #line4-2,
+    #line5-2 {
         float: none;
         margin-right: 0;
         margin-left: 0;
@@ -1044,7 +1222,6 @@ div#main-content.container {}
         margin-left: 33%;
     }
     #rent-block {
-        position: absolute;
         background: url(../images/Hookah/back-md.png) no-repeat;
         width: 100%;
         height: 95%;
@@ -1148,11 +1325,18 @@ div#main-content.container {}
         cursor: pointer;
     }
     /* END ACCESSORIZE */
+    #insta2 {
+        width: 50px;
+        height: 50px;
+    }
+    #telegram2 {
+        width: 33px;
+        height: 33px;
+    }
 }
 
 @media(max-width: 580px) {
     #rent-block {
-        position: absolute;
         background: url(../images/Hookah/back-md.png) no-repeat;
         width: 100%;
         height: 95vw;
@@ -1166,6 +1350,43 @@ div#main-content.container {}
     #hookah-inf>h3 {
         margin-top: 0;
     }
+    /* MAP */
+    #background-info {
+        width: 96%;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding-left: 0;
+        margin-top: -5%;
+        /* margin: 0 auto; */
+        height: 100%;
+    }
+    #info {
+        padding-right: 0;
+        border-radius: 30px 30px 0 0;
+        height: 205px;
+    }
+    #time {
+        font-size: 3.8vw;
+        padding-top: 2%;
+        padding-left: 0;
+    }
+    #discr {
+        font-size: 2.2vw;
+    }
+    #map {
+        height: 50vw;
+        padding: 40px;
+    }
+    #calendar {
+        margin-top: 2%;
+        margin-left: -30%;
+    }
+    .social {
+        font-size: 2.2vw;
+        margin-top: -3%;
+        padding: 0;
+    }
+    /* END MAP */
 }
 
 @media(max-width:440px) {
@@ -1183,7 +1404,8 @@ div#main-content.container {}
     p #line1-2,
     #line2-2,
     #line3-2,
-    #line4-2 {
+    #line4-2,
+    #line5-2 {
         font-size: 15px;
     }
     .Undertext {
@@ -1294,7 +1516,6 @@ div#main-content.container {}
     }
     /* END ACCESSORIZE */
     #rent-block {
-        position: absolute;
         background: url(../images/Hookah/back-md.png) no-repeat;
         width: 100%;
         height: 120vw;
@@ -1312,6 +1533,41 @@ div#main-content.container {}
     }
     #hookah-inf>p {
         font-size: 3vw;
+    }
+    #background-info {
+        width: 96%;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding-left: 0;
+        margin-top: -5%;
+        /* margin: 0 auto; */
+        height: 100%;
+    }
+    #info {
+        padding-right: 0;
+        border-radius: 30px 30px 0 0;
+        height: 205px;
+    }
+    #time {
+        font-size: 4vw;
+        padding-top: 2%;
+        padding-left: 0;
+    }
+    #discr {
+        font-size: 2.6vw;
+    }
+    #map {
+        height: 50vw;
+        padding: 40px;
+    }
+    #calendar {
+        margin-top: 2%;
+        margin-left: -30%;
+    }
+    .social {
+        font-size: 2.6vw;
+        margin-top: -3%;
+        padding: 0;
     }
 }
 
@@ -1360,7 +1616,6 @@ div#main-content.container {}
     }
     /* END ACCESSORIZE */
     #rent-block {
-        position: absolute;
         background: url(../images/Hookah/back-md.png) no-repeat;
         width: 100%;
         height: 120vw;
@@ -1372,6 +1627,41 @@ div#main-content.container {}
     }
     #hookah-inf>p {
         font-size: 3vw;
+    }
+    #background-info {
+        width: 96%;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding-left: 0;
+        margin-top: -5%;
+        /* margin: 0 auto; */
+        height: 100%;
+    }
+    #info {
+        padding-right: 0;
+        border-radius: 30px 30px 0 0;
+        height: 180px;
+    }
+    #time {
+        font-size: 4vw;
+        padding-top: 2%;
+        padding-left: 0;
+    }
+    #discr {
+        font-size: 2.6vw;
+    }
+    #map {
+        height: 70vw;
+        padding: 40px;
+    }
+    #calendar {
+        margin-top: 2%;
+        margin-left: -30%;
+    }
+    .social {
+        font-size: 2.6vw;
+        margin-top: -3%;
+        padding: 0;
     }
 }
 
