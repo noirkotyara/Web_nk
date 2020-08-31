@@ -149,15 +149,11 @@ button:focus {
 
 /* Tabacos */
 
-#tabak {
-    color: white;
-    font-size: 25px;
-}
-
 #features,
 #ugoli,
 #rent,
-#aboutUs {
+#aboutUs,
+#tabak {
     color: white;
     font-size: 25px;
 }
@@ -1265,10 +1261,6 @@ footer {
     #line5-1 {
         display: none;
     }
-    #tabak {
-        text-align: center;
-        font-size: 22px;
-    }
     p #line1-2,
     #line2-2,
     #line3-2,
@@ -1277,6 +1269,7 @@ footer {
         float: none;
         margin-right: 0;
         margin-left: 0;
+        font-size: 30px;
     }
     .btn {
         font-size: 15px;
@@ -1693,6 +1686,17 @@ footer {
         height: 120vw;
         margin-top: 15%;
         /* opacity: .3; */
+    }
+    #ugli-content {
+        margin-top: -60px;
+        margin-bottom: -100px;
+    }
+    #main-container-aboutUs {
+        margin-top: -70px;
+        margin-bottom: -50px;
+    }
+    #rent-content {
+        margin-top: 70px;
     }
     #background-rent {
         height: 50%;
