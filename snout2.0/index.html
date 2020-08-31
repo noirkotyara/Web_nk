@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -97,18 +97,18 @@
 
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
 
-        <div class="carousel-inner">
-            <div class="carousel-item  active">
+        <div class="carousel-inner single-item">
+            <div class="carousel-item slick-slide active">
                 <img src="images/Main-content/fog.png" width="100%" id="firstImg" class="d-block w-100 ">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item slick-slide">
                 <img src="images/Main-content/smoke_black.jpg" width="100%" id="secondImg" class="d-block w-100">
             </div>
 
@@ -143,7 +143,7 @@
                 <li data-target="#carouselExampleIndicatorT" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicatorsT" data-slide-to="1"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                 <div class="carousel-item active carousel-item-tobacco">
                     <img src="images/Tabakos/sl-1.png" width="70% " class="ImgT">
                     <img src="images/Tabakos/sl-xs-1.png" width="70% " class="ImgT-2">
@@ -262,7 +262,7 @@
                             <li data-target="#carouselExampleIndicatorsC1" data-slide-to="1"></li>
                         </ol>
 
-                        <div class="carousel-inner-coal" class="carousel-inner">
+                        <div class="carousel-inner-coal single-item" class="carousel-inner">
                             <div class="carousel-item ugol-carousel active">
                                 <img src="images/Ugol/ugol_pack.jpg" width="100%" id="firstImgC1" class="d-block w-100 ">
                             </div>
@@ -296,7 +296,7 @@
                             <li data-target="#carouselExampleIndicatorsC2" data-slide-to="1"></li>
                         </ol>
 
-                        <div class="carousel-inner-coal" class="carousel-inner">
+                        <div class="carousel-inner-coal single-item" class="carousel-inner">
                             <div class="carousel-item ugol-carousel  active">
                                 <img src="images/Ugol/ugol_one.jpg" width="100%" id="firstImgC2" class="d-block w-100 ">
                             </div>
@@ -415,7 +415,50 @@
 
 
     <!--FOOTER-->
+    <footer class="page-footer">
+        <div class="container container-footer">
+            <div class="row">
+                <section id="text-logo-footer" class="col-md-4 col-sm-12">
+                    <a id="brand-footer" href="index.html">
+                        <h1>
+                            13Gram
+                        </h1>
+                        <p>hookah store</p>
+                    </a>
+                </section>
 
+                <section id="ct-footer" class="col-md-4 col-sm-12">
+                    <img id="calendar-footer" src="images/AboutUs/calendar.svg" alt="CalendarIcon">
+                    <p id="time-footer">10:00<br>21:00</p>
+
+                </section>
+
+                <section class="col-md-4 col-sm-12">
+                    <div id="ps-footer">
+                        <a id="phone-footer" href="tel:+380637915664">
+                            063-791-56-64
+                        </a>
+                        <div id="social-footer">
+                            Мы в сетях -
+                            <a id="inst" href="https://instagram.com/13gram.ck?igshid=iamt49kfr4bc" target="_blank">
+                                <img id="insta2" src="images/Social/inst.png" width="60" height="60" alt="Instagram">
+                            </a>
+
+                            <a id="tg" href="https://t.me/Cherkassy_13Gram" target="_blank">
+
+                                <img id="telegram2" src="images/Social/Telegram.svg" width="40" height="40" alt="Telegram">
+                            </a>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div id="copy-footer" class="footer-copyright text-center ">© 2020 Copyright: Create by
+            <a href="mailto:englishfemmes@gmail.com">The Bosses Team</a>
+        </div>
+    </footer>
     <!--END FOOTER-->
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
@@ -423,7 +466,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="/slick/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
     <!-- NEW -->
     <script>
