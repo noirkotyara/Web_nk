@@ -1,0 +1,29 @@
+/*href Tobacco */
+// $("#tabak-marg").bind("click", function() {
+//     if (window.innerWidth > 992) {
+//         $(this).attr("href", "#tabak");
+//     }
+//     if (window.innerWidth < 992) {
+//         $(this).attr("href", "#tabak2");
+//     }
+
+// });
+
+// $(document).ready(function() {
+//     $("#navbarSupportedContent").on("click", "a", function(event) {
+//         //отменяем стандартную обработку нажатия по ссылке
+//         event.preventDefault();
+
+//         //забираем идентификатор бока с атрибута href
+//         var id = $(this).attr('href'),
+
+//             //узнаем высоту от начала страницы до блока на который ссылается якорь
+//             top = $(id).offset().top;
+
+//         //анимируем переход на расстояние - top за 1500 мс
+//         $('html,body').animate({
+//             scrollTop: top
+//         }, 1500);
+
+//     });
+// });
